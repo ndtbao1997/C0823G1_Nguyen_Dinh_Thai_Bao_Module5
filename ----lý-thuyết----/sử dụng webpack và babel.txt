@@ -1,0 +1,14 @@
+* sử dụng webpack và babel
+npm init : khởi tạo package.json
+npm i --save react react-dom : khởi tạo react và react-dom
+npm i --save-dev webpack webpack-cli webpack-dev-server : khởi tạo webpack
+npm i --save-dev @babel/core babel-loader @babel/preset-env @babel/preset-react : cài đặt babel
+npm i --save-dev html-webpack-plugin : cài đặt html-webpack-plugin
+npm run build : Tạo bundle
+
+* sử dụng create-react-app
+- npx create-react-app my-app : Thao tác này sẽ tạo một thư mục có tên là ‘my-app’ và cài đặt tất cả các file cần thiết trong đó.
+- cd my-app : Thực thi câu lệnh sau để trỏ tới my-app
+- npm start : Thực thi câu lệnh sau để chạy dự án
+- npm i --save bootstrap : cài đặt bootstrap
+

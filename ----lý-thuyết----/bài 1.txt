@@ -1,0 +1,62 @@
+Sự khác nhau giữa Arrow function và function thông thường:
+- Cú pháp
+- Arrow function thường ngắn gọn hơn function
+- Arrow function không bind this
+- Arrow function không bind arguments
+- Arrow function không phù hợp làm method cho object
+- Arrow function không thể sử dụng làm hàm constructor
+- Arrow function không có thuộc tính prototype
+- Arrow function không được hoisted
+
+* foreach(): duyệt mảng nhưng k có trả về
+
+* Phương thức .map():
+- .map() được sử dụng để tạo một mảng mới bằng cách thực hiện một phép biến đổi trên từng phần tử của mảng gốc.
+- Nó nhận một hàm callback làm đối số, và hàm này được gọi với từng phần tử của mảng. Giá trị trả về từ hàm callback sẽ được đưa vào mảng mới tạo ra.
+- .map() không thay đổi mảng gốc, mà tạo ra một mảng mới có cùng độ dài với mảng gốc.
+
+* Phương thức .reduce():
+- .reduce() được sử dụng để tính toán một giá trị duy nhất từ các phần tử của mảng.
+- Nó nhận một hàm callback và một giá trị khởi đầu (hoặc không có giá trị khởi đầu nếu không được cung cấp).
+- Hàm callback của .reduce() nhận hai tham số: accumulator (giá trị tích lũy) và currentValue (giá trị hiện tại đang được xem xét).
+- Hàm callback sẽ được gọi cho từng phần tử của mảng, và giá trị trả về từ hàm callback sẽ được tích lũy trong accumulator.
+- Cuối cùng, giá trị tích lũy trong accumulator sẽ là kết quả của phương thức .reduce().
+
+* Phương thức .filter():
+- .filter() được sử dụng để tạo một mảng mới chỉ chứa các phần tử thỏa mãn một điều kiện nhất định.
+- Nó nhận một hàm callback làm đối số, và hàm này được gọi với từng phần tử của mảng. Nếu hàm callback trả về true, phần tử đó sẽ được bao gồm trong mảng mới, ngược lại, nó sẽ bị loại bỏ.
+- .filter() không thay đổi mảng gốc, mà tạo ra một mảng mới chứa các phần tử thỏa mãn điều kiện.
+
+* Rest param là chúng ta có thể truyền một mảng các tham số vào phương thức. Để truyền được mảng các tham số của một phương thức chúng ta dùng dấu 3 chấm như sau.
+function fn(a,b,...args) {
+   //...
+}
+
+* toán tử spread tương tự hàm concat() có nghĩa là nối mảng. là toán tử cho phép thao tác với mảng/obj.
+- sao ch mảng mới.
+- gộp nhiều mảng.
+- coppy thuộc tính của obj(có ghi đè).
+const odd = [1,3,5];
+const combined = [2,4,6, ...odd];
+console.log(combined);
+
+* Sự khác nhau giữa toán tử spread và tham số rest là :
+- Toán tử spread là cách ta uppack các giá trị trong mảng ra thành các phần tử. Ví dụ như mảng odd có 3 phần tử. Khi gọi combined = [2,4,6, …odd]; lúc này chúng ta có các giá trị 2,4,6,1,3,5
+- Ngược lại với toán tử spread thì tham số rest nhóm các giá trị đơn lẻ thành 1 biến. Ví dụ dưới đây chúng ta nhóm các giá trị đơn lẻ thành 1 biến trong tham số của phương thức f
+- Tham số rest bắt buộc phải ở cuối cùng của phương thức tuy nhiên toán tử spread có thể ở bất kỳ đâu
+
+* Destructuring tham số nghĩa là chúng ta có thể gán giá trị thuộc tính của một đối tượng hoặc một mảng vào trong các biến riêng biệt.
+function getScores() {
+   return [70, 80, 90];
+}
+let [x, y, z] = getScores();
+- Trường hợp function trả về nhiều hơn số lượng biến thì các giá trị dư thừa sẽ bị bỏ đi.
+- Trường hợp function trả về ít hơn số lượng biến thì các biến dư thừa sẽ có giá trị là underfine.
+
+
+
+* ECMAScript6: là phiên bản tiếp theo của ngôn ngữ Javascript, phát hành năm 2015, cung cấp một số tính năng mới, bao gồm việc cải thiện cú pháp khai báo biến, class... và toán tử mới.
+
+* Arrow function là cú pháp viết hàm trong JS. Sử dụng mũi tên =>
+
+* Lưu ý: arrow function không thể thay thế hoàn toàn function thông thường.

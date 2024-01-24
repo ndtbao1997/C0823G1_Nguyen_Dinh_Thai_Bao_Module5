@@ -1,0 +1,91 @@
+Bài 2:
+
+* React là một thư viện front-end do Facebook phát triển được sử dụng để xử lý tầng view cho các ứng dụng web và thiết bị di động. ReactJS cho phép chúng ta tạo các thành phần UI có thể tái sử dụng. Hiện ReactJS là một trong những thư viện JavaScript phổ biến nhất và có nền tảng vững chắc cũng như có một cộng đồng lớn.
+
+* Nên sử dụng react vì:
+- Dễ dàng tạo các ứng dụng động
+- Cải thiện hiệu năng với Virtual DOM
+- Các component có thể tái sử dụng
+- Dễ dàng viết component dễ dàng hơn
+- Thân thiện với SEO
+
+* SEO là viết tắt của "Search Engine Optimization" (tìm kiếm tối ưu hóa công cụ). Đó là quá trình tối ưu hóa một trang web hoặc một nội dung trên trang web để cải thiện khả năng xuất hiện và xếp hạng trên các kết quả tìm kiếm tự nhiên của các công cụ tìm kiếm như Google, Bing, hoặc Yahoo.
+
+* DOM (Mô hình Đối tượng Tài liệu) coi một file XML hoặc HTML như một cấu trúc cây, trong đó mỗi nút là một đối tượng đại diện cho một phần của tài liệu.
+
+* Virtual DOM là một định dạng dữ liệu của JavaScript, với khối lượng nhẹ và được dùng để thể hiện nội dung của DOM – Document Object Model – Mô hình Đối tượng Tài liệu tại một thời điểm nhất định nào đó. Khi trạng thái của một đối tượng thay đổi, VDOM chỉ thay đổi đối tượng đó trong DOM thực thay vì cập nhật tất cả các đối tượng.
+
+* Server-Side Rendering (SSR):
+- SSR là quá trình tạo và render giao diện người dùng trên phía máy chủ (server) trước khi gửi đến trình duyệt.
+- Ưu điểm:
++ SEO tốt
++ Hiệu suất trang ban đầu tốt
++ Tướng thích ngược tốt(có nghĩa là tương thích với các trình duyệt cũ)
+- Nhược điểm:
++ Hiệu suất trang động có thể bị giảm
++ Có thể tăng tải máy chủ khi có nhiều yêu cầu đồng thời
+- Trường hợp sử dụng SSR:
++ Ứng dụng yêu cầu SEO tốt và hiển thị nội dung được tối ưu cho công cụ tìm kiếm.
++ Ứng dụng có tính tương tác ban đầu ít và chủ yếu hiển thị nội dung tĩnh.
++ Ứng dụng cần hỗ trợ tốt việc tương thích ngược với các trình duyệt cũ hơn.
+SSR thường cần thời gian phản hồi ban đầu lâu hơn, nhưng nội dung được hiển thị nhanh chóng. Nó thích hợp cho các trang web có nội dung tĩnh hoặc ít thay đổi.
+
+* Client-Side Rendering (CSR):
+- CSR là quá trình tạo và render giao diện người dùng trên phía trình duyệt của người dùng.
+- Ưu điểm:
++ Tương tác với người dùng mượt mà
++ Quản lý trạng thái ứng dụng phức tạp trở nên dễ dàng hơn nhờ React hoặc Angular
+- Nhược điểm:
++ SEO khó khăn
++ Hiệu năng trang ban đầu kémm
+- Trường hợp sử dụng CSR:
++ Ứng dụng cótính tương tác người dùng cao và cần đáp ứng nhanh chóng cho các hành động người dùng.
++ Ứng dụng không yêu cầu SEO quan trọng hoặc đã có các biện pháp khác để tối ưu SEO.
++ Ứng dụng có tính tương thích ngược không cần thiết với các trình duyệt cũ hơn.
+- CSR thường có thời gian phản hồi ban đầu nhanh hơn, nhưng nội dung có thể mất một thời gian để hiển thị, đặc biệt khi có nhiều yêu cầu dữ liệu từ máy chủ hoặc API. CSR thích hợp cho các ứng dụng web động hoặc phức tạp với tương tác người dùng nhiều.
+
+* React Element và cơ chế Rendering Elements :
+- Trong React, Element là những mảnh ghép nhỏ nhất của các ứng dụng React.
+- React element là những “đối tượng đơn giản” (plain object) và rất dễ để tạo ra
+- React element chỉ là một đối tượng JavaScript cũ đơn thuần mà không có các phương thức riêng, là những gì được trả về từ các components. Nó mô tả những gì chúng ta muốn thấy trên màn hình, nó là thành phần đại diện của DOM.
+- React.createElement(type, [props], [...children])
+
+* JSX = Javascript + XML
+- JSX là viết tắt của JavaScript XML.
+- JSX là một ngôn ngữ cho phép bạn kết hợp JavaScript và các thẻ giống HTML để xác định các phần tử giao diện người dùng (UI) và chức năng của chúng.
+- JSX là một phần mở rộng cho JavaScript cho phép viết những gì trông giống như HTML và XML trong JavaScript.
+- JSX là cách viết tắt để gọi React.createElement () để tạo các phần tử và thành phần (Babel biên dịch JSX thành những câu gọi hàm React.createElement()).
+- JSX trông giống như HTML và cung cấp một cú pháp thân thiện để tạo các phần tử DOM.
+- JSX chấp nhận bất kỳ biểu thức JavaScript hợp lệ nào bên trong dấu ngoặc nhọn.
+- <JSXName JSXAttributes>
+     ……
+</JSName>
+Hoặc
+<JSXName JSXAttributes />
+
+* Việc sử dụng JSX trong ReactJS là không bắt buộc. Bạn có thể sử dụng chỉ JS thuần. Nhưng có rất nhiều lý do cho việc nên sử dụng JSX trong ReactJS
+- Thứ nhất, JSX với cú pháp gần giống XML, cấu trúc cây khi biểu thị các attributes, điều đó giúp ta dễ dàng định nghĩa, quản lý được các component phức tạp, thay vì việc phải định nghĩa và gọi ra nhiều hàm hoặc object trong javascript. Khi nhìn vào cấu trúc đó cũng dễ dàng đọc hiểu được ý nghĩa của các component. Code JSX ngắn hơn, dễ hiểu hơn code JS.
+- Thứ 2, JSX không làm thay đổi ngữ nghĩa của Javascript
+- Thứ 3, với cách viết gần với các thẻ HTML, nó giúp những developers thông thường (ví dụ như các designer) có thể hiểu được một cách dễ dàng, từ đó có thể viết hoặc sửa code mà không gặp nhiều khó khăn.
+
+* ReactJS là thư viện Javascript, tạo ra các thành phần giao diện người dùng có tính tái sử dụng được
+
+* ReactJs được phát triển bởi Facebook, thường được sử dụng để phát triển ứng dụng single-page.
+
+* SSR-MPA(Multi-Page Application)
+- Nội dung HTML được xử lý trên sever và trả lại cho browser nội dung HTML đã hoàn chỉnh và được hiển thị ngay khi nó được tải về máy client.
+
+* CSR-SPA(Single-Page Application)
+- Sever chỉ có nhiệm vụ trả về mã nguồn của JS + dữ liệu thô cho client. việc sinh nội dung đều thực hiện ngay trên may client.(Code JS có nhiệm vụ render giao diện HTML)
+
+* React Element là một phần tử giúp xây dựng UI trong React
+- React.createElement(type,props,... children)
+
+* JSX= JS + XML
+- JSX là ngôn ngữ kết hợp giữa JS và các thẻ giống HTML để xác định các phần tử giao diện người dùng.
+
+* So sánh React.createElement() và JSX
+- JSX cung cấp cú pháp gần gũi với HTML, dễ hiểu và dễ viết.
+- React.createElement() yêu cầu bạn phải viết mã JavaScript trực tiếp và truyền các tham số rõ ràng.
+- JSX cho phép bạn sử dụng biểu thức JavaScript bên trong nó, điều này không thể thực hiện trực tiếp trong React.createElement().
+- JSX cần một bước biên dịch thành React.createElement() trước khi chạy trên trình duyệt.
