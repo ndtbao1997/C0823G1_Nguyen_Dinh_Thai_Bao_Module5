@@ -1,0 +1,34 @@
+Bài 7:
+
+* Redux là thư viện để quản lý state của ứng dụng 
+- Redux cung cấp một nơi lưu trữ state trong toàn bộ ứng dụng và đảm bảo state luôn cập nhật theo một cách có thể dự đoán được.
+- Nơi lưu trữ toàn bộ state được gọi là store, và mỗi component đều có thể truy cập vào bất kì state nào mà chúng sử dụng trong store này.
+
+* Ưu điểm:
+- Khả năng bảo trì
+- Có thể dự đoán sự thay đổi của trạng thái.
+- Dễ kiểm thử
+- Dễ tích hợp các kiến trúc khác
+
+* Redux Actions: 
+- Action là các sự kiện
+- Action là đối tượng trong JS
+- Các action được gởi đến store bằng dispatch()
+- Action thông thường có 2 thuộc tính 
++ Type: chỉ ra hành động sẽ thực hiện (phân loại giữa các action)
++ payload: chứa thông tin dữ liệu cần gởi đi 
+
+* Reducer là hàm pure function lấy trạng thái của ứng dụng, sau đó thực hiện hành động => trả về trạng thái mới
+- Reducer phải tuân thủ theo các quy tắt:
++ Chỉ được tính toán state mới dựa trên state cũ+ action
++ Không được chỉnh sửa state hiện tại, thay vao đó hãy coppy giá trị state hiện tại và thay đổi trên giá trị coppy đó.
++ Không được xử lý các logic bất đồng bộ, tính toán ngẫu nhiên hoặc các hàm side effect.
+
+* Logic xử lý:
+- Kiểm tra action truyền vào => action hợp lệ => copy state hiện tại => tạo state mới và xử lý theo nội dung => return state mới => nếu action không hợp lệ => return state hiện tại
+
+* Redux Store:
+- Store là object tree bất biến trong redux. Store là vùng chứa trạng thái của ứng dụng, mỗi lần reducer xử lý sẽ trả về 1 state mới. Tập hợp các state
+
+
+npm i --save-exact react-bootstrap@2.2.2 bootstrap@5.1.3 sass@1.49.10

@@ -12,3 +12,33 @@ npm run build : Tạo bundle
 - npm start : Thực thi câu lệnh sau để chạy dự án
 - npm i --save bootstrap : cài đặt bootstrap
 
+Các thư viện dùng trong bài học:
+Formik
+npm i formik
+https://formik.org/docs/overview
+Yup - validate
+npm i yup
+https://formik.org/docs/guides/validation#validationschema
+Spiner
+npm i react-loader-spinner
+https://www.npmjs.com/package/react-loader-spinner
+Toast
+npm i react-toastify
+https://www.npmjs.com/package/react-toastify
+React Router
+npm i react-router-dom
+https://reactrouter.com/en/main
+
+* Sử dụng với formik : enableReinitialize={true}
+
+npm install redux  (Sử dụng thư viện redux quản lý state)
+npm install react-redux (Đi kèm với gói redux cho phép sử dụng các hàm trong thư viên)
+npm install redux-saga (Cho phép redux xử lý các side-effect)
+npm install axios (Sử dụng gói này để call các API)
+
+
+npm install redux  (Sử dụng thư viện redux quản lí state)
+npm install react-redux (Đi kèm với gói redux cho phép sử dụng các hàm trong thư viên)
+npm install redux-thunk 
+npm install react-router-dom (Sử dụng gói này để quản lí router)
+npm install axios (Sử dụng gói này để call các API)

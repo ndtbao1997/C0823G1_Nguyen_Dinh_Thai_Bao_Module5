@@ -32,3 +32,21 @@ Bài 3:
 + Mounting: Giai đoạn này được thực hiện sau khi quá trình initialization(khởi tạo) được hoàn thành. Nó thực hiện nhiệm vụ chuyển virtual DOM (DOM ảo) trong React thành DOM và hiển thị trên trình duyệt.
 + Updating: là giai đoạn trạng thái của một thành phần được cập nhật và ứng dụng được render lại.
 + Unmounting: là bước cuối cùng của vòng đời thành phần, nơi thành phần được xóa khỏi trang.
+
+* React Components:
+- Component là block code độc lập, có thể tái sử dụng.
+- Mỗi components có code js, html, css riêng. Chúng có thể tái sử dụng, dễ đọc, dễ viết, dễ test.
+- Có 2 loại component trong react: function component, class component.
+
+* Props là từ viết tắt của properties. Được sử dụng để truyền data qua lại giữa các component.
+
+* State là nơi lưu trữ các giá trị của component
+- Khi state thay đổi thì component sẽ được render lại. Dùng setState() để cập nhật giá trị của state.
+
+* Pure function: Hàm thuần khiết.
+- Hàm luôn trả về một kết quả, nếu được truyền vào các tham số không đổi. Hàm không phụ thuộc trạng thái hoặc dữ liệu nào, hàm chỉ phụ  thuộc vào tham số đầu vào. 
+- Hàm không tạo ra bất kì ảnh hưởng nào đén các đối tượng khác ngoài hàm
+- Lý do:
++ Không gây side-effect
++ Dễ dàng kiểm tra
++ Refactoring code dễ dàng hơn

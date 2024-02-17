@@ -1,0 +1,25 @@
+Bài 5:
+
+* Trong ReactJS, tạo form bằng cách sử dụng các thành phần (components) và sự kiện xử lý (event handling) để quản lý trạng thái và tương tác với các trường dữ liệu trong form.
+- Tạo Form Component
+- Quản lý trạng thái của form
+- Xử lý sự kiện thay đổi trường dữ liệu
+- Xử lý submit form
+- Triển khai validation có thể dùng các hàm thông thường, sử dụng formik, hoặc thư viện của yup (validateSchema)
+
+* React-Router là một thư viện định tuyến (routing) tiêu chuẩn trong React. Nó giữ cho giao diện của ứng dụng đồng bộ với URL trên trình duyệt. React-Router cho phép bạn định tuyến “luồng dữ liệu” (data flow) trong ứng dụng của bạn một cách rõ ràng. Nó tương đương với sự khẳng định, nếu bạn có URL này, nó sẽ tương đương với Route này, và giao diện tương ứng.
+
+* Cách triển khai:
+- cài đặt : npm i react-router-dom
+- Sử dụng BrowserRouter vs HashRouter
+- Định nghĩa các route
+- sử dụng cặp thẻ <Link><e/Link> để chuyển hướngg
+- Có thể sử dụng Nested Route, Index Route, và truyền tham số search Params
+
+* Trong ReactJs để tạo form thì có thể sử dụng lại các thành phần của form Html như <input>,<form>... kết hợp với các sự kiện onChange(), onSubmit(),.. để xử lý data trên form.
+- Validate sử dụng các hàm của js
+- Ngoài ra có thể sử dụng các thư viện xử lý form và validate form: Formik, Yup, React form hook.
+
+* React Router là thư viện được xây dựng trên React, giúp cho lập trình viên xây dựng luồng đi - định tuyến cho ứng dụng SPA.
+
+* Routers được sử dụng để định nghĩa nhiều định tuyến khác nhau. khi người dùng truy cập vào 1 URL nhất định, nếu URL đó được tìm thấy trong các URL được định nghĩa bên trong Routers, thì người dùng sẽ được chuyển hướng đến page tương ứng và sự thay đổi giá trị URL trên màn hình.

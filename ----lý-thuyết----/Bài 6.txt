@@ -1,0 +1,37 @@
+Bài 6:
+
+* Sync và Async
+ - Sync ( đồng bộ ) - các công việc thực hiện một cách tuần tự, công việc này xong thì mới thực hiện các công việc khác. Ví dụ công việc A và B thì A phải thực hiện xong trước rồi mới tới lượt B thực hiện
+=> điều này ảnh hưởng tới trải nghiệm/ hiệu suất người dùng
+ - Async( bất đồng bộ) - với cách xử lý bất đồng bộ, thì A đang thực hiện chương trình vẫn có thể thực hiện B mà không cần đợi A hoàn thành
+cáchh sử dụng promise để xử lý bất đồng bộ
+
+* promise sinh ra để xử lý kết quả của 1 hành động cụ thể, kết quả của mỗi hành động là thành công hoặc thất bại và promise giúp giải quyết vấn đề thành công sẽ làm gì và thất bại sẽ làm gì
+- Khi promise được khởi tạo thì có một trạng thái này
+Pendding: hành động đang chờ xử lý hoặc bị từ chối
+Fulfilled : hành động xử lý xong và thành công
+Rejected: hành động xử lý xong và thất bại
+
+* Axios
+- là thư viện HTTP Client dựa trên promise.Cơ bản thì cung cấp một API cho việc xử lý XHR(XMLHttpRequest)
+- 1 số tính năng :
++ Tạo XMLHttpRequest từ trình duyệt
++ Thực hiện các Http request từ nodejs
++ hỗ trợ promise api
++ chuyển đổi request,respone
++ xử lý tiền kì, hậu kì của respone
++ cancel request
+
+* Async /Await
+- là cơ chế thực hiện các thao tác bất đồng bộ một cách tuần tự
+- Async /Await vẫn sử dụng promise nhưng mà mã nguồn trong sáng và dễ theo dõi hơn
+- Async - khai báo một hàm , khi thêm vào trong hàm thì sẽ hiểu rằng mình đang khai báo 1 hàm bất đồng bộ. Công dụng :
++ Tự động biến đổi hàm thông thường thành 1 hàm promise
++ khi gọi tới hàm async sẽ xử lý mọi thứ và trả về kết quả trong hàm của nó
++ cho phép sử dụng await
+- Await - là từ khoá sẽ được dùng trước thao tác bất đồng bộ, tạm dừng việc thực hiện đồng bộ lại để chờ kết quả phía sau. Công dụng:
+Khi đặt await trước 1 promise sẽ đợi cho đến khi promise kết thúc và trả về kết quả
+await chỉ hoạt động với promise
+(Nếu thiếu await thì kết quả log ra là Undefined vì đang xử lý XHR)
+await chỉ sử dụng bên trong function async của nó
++ async cho phép sử dụng await

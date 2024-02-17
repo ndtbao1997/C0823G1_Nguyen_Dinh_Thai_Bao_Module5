@@ -1,0 +1,48 @@
+Bài 4:
+
+* Hooks là những hàm cho phép bạn “kết nối” React state và lifecycle vào các components sử dụng hàm. Với Hooks bạn có thể sử dụng state và lifecycles mà không cần dùng ES6 class
+
+* Một số điểm cần lưu ý:
+- Khi sử dụng useEffect để lấy dữ liệu, cần kiểm tra dữ liệu đã tồn tại hay chưa. Nếu không thì hàm sẽ gửi request liên tục.
+- Có thể sử dụng tham số thứ hai của hàm useEffect() để chỉ định chỉ thực thi hàm khi biến thay đổi giá trị.
+
+* Ưu điểm:
+- Đơn giản và dễ sử dụng
+- Tái sử dụng logic
+- Quản lý state
+- Xử lý lifecycle
+- Performance tốt hơn
+- Hỗ trợ cho việc viết code không phụ thuộc vào class
+
+* Hook useState trong React được sử dụng để khởi tạo và quản lý state trong một function component. Nên sử dụng useState trong các trường hợp: khởi tạo state, quản lý state.
+
+* Cách triển khai:
+- import hook useState từ thư viện react
+- khởi tạo state bằng useState
+- sử dụng state thông qua biến state và hàm cập nhật state
+
+* Hook useEffect trong React được sử dụng để xử lý các side effect trong một function component. Side effect có thể là các tác vụ như gọi API, đăng ký và hủy đăng ký các sự kiện, cập nhật DOM, và nhiều hơn nữa. Nên sử dụng useEffect trong các trường hợp: gọi API hoặc thực hiện tác vụ bất đồng bộ, đăng ký và hủy đăng ký các sự kiện.
+
+* Cách triển khai:
+- import hook useEffect từ thư viện react
+- sử dụng useEffect bằng useEffect
+- hủy các side effect nếu cần
+
+* Hooks là tính năng mới trong React V16.8, đây là những hàm đặc biệt, được React tạo sẵn cho phép kết nối React state và lifecycle vào function component. 
+
+* Lợi ích:
+- Khiến các component trở nên gọn nhẹ hơn
+- Giảm đáng kể số lượng code, dễ tiếp cận hơn
+- Không cần kiến thức OOP...
+
+* Một số hooks:
+- useState
+- useEffet
+- useLayoutEffect
+- useContext
+- useReducer
+- useMemo
+- useRef
+- useCallback
+
+* useState cho phép thêm/lưu trữ state tới react function component
