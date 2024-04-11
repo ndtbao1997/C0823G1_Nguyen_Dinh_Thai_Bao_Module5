@@ -21,9 +21,31 @@ import {
     MDBModalFooter,
 } from 'mdb-react-ui-kit';
 import Footer from "./Footer";
-import {getHome} from "../redux/action/home";
+import {getHome, getHomeById} from "../redux/action/home";
+import {deleteVillaById} from "../redux/action/villa";
+import {toast} from "react-toastify";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 
 export default function Home() {
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleDelete = async () => {
+        try {
+            await dispatch(deleteHomeById(homeById.id));
+            toast(`Bạn đã xóa thành công dịch vụ ${homeById.serviceName}!!!`)
+            fetchData();
+        } catch (err) {
+            toast("Đã xảy ra lỗi trong quá trình xử lý!!!")
+            fetchData();
+        }
+        setShow(false);
+    }
+    const handleShow = async (id) => {
+        await dispatch(getHomeById(id));
+        setShow(true)
+    };
+    const homeById = useSelector(state => state.homeById);
     const home = useSelector(state => state.home);
     const [totalPage, number] = useSelector(state => state.totalPagesHome)
     const dispatch = useDispatch();
@@ -76,8 +98,9 @@ export default function Home() {
     const toggleClose = () => {
         setTopRightModal(!topRightModal);
     }
+    const fetchData = () => dispatch(getHome());
     useEffect(() => {
-        dispatch(getHome());
+       fetchData();
     }, []);
     return <div>
         <MDBContainer>
@@ -106,6 +129,9 @@ export default function Home() {
                                         onClick={() => toggleOpen(h.id)}>
                                     Chi tiết
                                 </MDBBtn>
+                                <Button variant="primary" onClick={() => handleShow(h.id)}>
+                                    Xóa
+                                </Button>
                             </MDBCardBody>
                         </MDBCard>
                     </MDBCol>
@@ -165,6 +191,20 @@ export default function Home() {
                 </MDBPagination>
             </nav>
         </MDBContainer>
+        <Modal show={show} onHide={handleClose} animation={false}>
+            <Modal.Header closeButton>
+                <Modal.Title>Xác nhận</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>Bạn có chắc chắn muốn xóa dịch vụ "{homeById.serviceName}" không?</Modal.Body>
+            <Modal.Footer>
+                <Button variant="secondary" onClick={handleClose}>
+                    Đóng
+                </Button>
+                <Button variant="primary" onClick={handleDelete}>
+                    Xóa
+                </Button>
+            </Modal.Footer>
+        </Modal>
         <Footer/>
     </div>;
 }

@@ -56,9 +56,7 @@ public class ServiceController {
         if (service1Optional.isEmpty()){
             return ResponseEntity.noContent().build();
         }
-
         Service1 service1 = service1Optional.get();
-        System.out.println(service1.getServiceName());
         return ResponseEntity.ok(service1);
     }
 
@@ -66,5 +64,15 @@ public class ServiceController {
     public ResponseEntity<?> deleteVillaById(@PathVariable Integer id){
         iService1Service.deleteById(id);
         return ResponseEntity.ok().build();
+    }
+
+    @GetMapping("/home/{id}")
+    public ResponseEntity<Service1> getHomeById(@PathVariable Integer id){
+        Optional<Service1> service1Optional = iService1Service.findById(id);
+        if (service1Optional.isEmpty()){
+            return ResponseEntity.noContent().build();
+        }
+        Service1 service1 = service1Optional.get();
+        return ResponseEntity.ok(service1);
     }
 }

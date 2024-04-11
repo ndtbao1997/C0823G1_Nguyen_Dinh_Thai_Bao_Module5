@@ -1,6 +1,6 @@
 import {combineReducers} from "redux";
 import {totalPagesVillaReducer, villaByIdReducer, villaReducer} from "./villa";
-import {homeReducer, totalPagesHomeReducer} from "./home";
+import {homeByIdReducer, homeReducer, totalPagesHomeReducer} from "./home";
 import {roomReducer, totalPagesRoomReducer} from "./room";
 
 const rootReducer = combineReducers({
@@ -10,6 +10,7 @@ const rootReducer = combineReducers({
     totalPagesHome: totalPagesHomeReducer,
     room: roomReducer,
     totalPagesRoom: totalPagesRoomReducer,
-    villaById: villaByIdReducer
+    villaById: villaByIdReducer,
+    homeById: homeByIdReducer
 })
 export default rootReducer;

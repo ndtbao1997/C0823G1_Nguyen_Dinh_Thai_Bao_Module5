@@ -1,9 +1,0 @@
-{
-    "pigs": [
-        { "id": 1, "name": "aaa", "weight": 3, "age" : 2, "gender" : 0, "number": 1 },
-        { "id": 2, "name": "bbb", "weight": 3, "age" : 2, "gender" : 0, "number": 1 },
-        { "id": 3, "name": "ccc", "weight": 3, "age" : 2, "gender" : 0, "number": 1 },
-        { "id": 4, "name": "ddd", "weight": 3, "age" : 2, "gender" : 0, "number": 1 },
-        { "id": 5, "name": "eee", "weight": 3, "age" : 2, "gender" : 0, "number": 1 }
-      ]
-}

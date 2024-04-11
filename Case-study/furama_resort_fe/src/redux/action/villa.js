@@ -1,6 +1,5 @@
 import {villaService} from "../../service/villaService";
 import {GET_VILLA, GET_VILLA_BY_ID} from "./type";
-import {toast} from "react-toastify";
 
 export const getVilla = (page = 0) => {
     return async (dispatch) => {

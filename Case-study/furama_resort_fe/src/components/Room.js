@@ -23,8 +23,30 @@ import {
 import Footer from "./Footer";
 import {getHome} from "../redux/action/home";
 import {getRoom} from "../redux/action/room";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import {deleteVillaById, getVillaById} from "../redux/action/villa";
+import {toast} from "react-toastify";
 
 export default function Room() {
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleDelete = async () => {
+        try {
+            await dispatch(deleteVillaById(villaById.id));
+            toast(`Bạn đã xóa thành công dịch vụ ${villaById.serviceName}!!!`)
+            fetchData();
+        } catch (err) {
+            toast("Đã xảy ra lỗi trong quá trình xử lý!!!")
+            fetchData();
+        }
+        setShow(false);
+    }
+    const handleShow = async (id) => {
+        await dispatch(getVillaById(id));
+        console.log(villaById);
+        setShow(true)
+    };
     const room = useSelector(state => state.room);
     const [totalPage, number] = useSelector(state => state.totalPagesRoom)
     const dispatch = useDispatch();
@@ -107,6 +129,9 @@ export default function Room() {
                                         onClick={() => toggleOpen(r.id)}>
                                     Chi tiết
                                 </MDBBtn>
+                                <Button variant="primary" onClick={() => handleShow(v.id)}>
+                                    Xóa
+                                </Button>
                             </MDBCardBody>
                         </MDBCard>
                     </MDBCol>
@@ -164,6 +189,20 @@ export default function Room() {
                 </MDBPagination>
             </nav>
         </MDBContainer>
+        <Modal show={show} onHide={handleClose} animation={false}>
+            <Modal.Header closeButton>
+                <Modal.Title>Xác nhận</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>Bạn có chắc chắn muốn xóa dịch vụ "{villaById.serviceName}" không?</Modal.Body>
+            <Modal.Footer>
+                <Button variant="secondary" onClick={handleClose}>
+                    Đóng
+                </Button>
+                <Button variant="primary" onClick={handleDelete}>
+                    Xóa
+                </Button>
+            </Modal.Footer>
+        </Modal>
         <Footer/>
     </div>;
 }

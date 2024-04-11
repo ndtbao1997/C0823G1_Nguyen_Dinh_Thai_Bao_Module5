@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2ee78105-35f3-44ac-b009-e7f32861867b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../thi_module5/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../thi_module5/src/components/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../thi_module5/src/components/UpdateProduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../thi_module5/src/service/productsService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort/src/main/java/com/example/furama_resort/controller/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort/src/main/java/com/example/furama_resort/controller/ServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/default-development/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/default-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/default-development/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/default-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/default-development/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/default-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/default-development/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/default-development/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/default-development/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/default-development/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/default-development/5.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/default-development/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/components/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/components/Room.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/components/Room.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/redux/action/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/redux/action/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/redux/action/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/redux/action/room.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/redux/action/type.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/redux/action/type.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/redux/action/villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/redux/action/villa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/redux/reducer/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/redux/reducer/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/redux/reducer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/redux/reducer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/service/homeService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Case-study/furama_resort_fe/src/service/homeService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai_2/prac/ReactJS/thuchanh1" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_2/prac/ReactJS/thuchanh1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai_3/prac/demo-props" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_3/prac/demo-props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../thi_thu_module5/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../thi_thu_module5/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../thi_thu_module5/src/service/baiHatService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../thi_thu_module5/src/service/baiHatService.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2cZCBoD28lNNw3l2xJEYQZKvRL2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/C0823G1_Nguyen_Dinh_Thai_Bao_Module1/module_5/bai_5/exec/login-router",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ee78105-35f3-44ac-b009-e7f32861867b" name="Changes" comment="" />
+      <created>1708309580764</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708309580764</updated>
+      <workItem from="1708309581813" duration="38000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

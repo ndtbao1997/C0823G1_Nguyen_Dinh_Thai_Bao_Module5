@@ -11,7 +11,7 @@ Bài 3:
 * Cách  triển khai props:
 - Truyền một biến
 - Truyền một đối tượng
-- Tạo props mặc định
+- Tạo props mặc định 
 
 * State là một object có thể được sử dụng để chứa dữ liệu hoặc thông tin về components, từ đó bạn có thể luân chuyển dữ liệu đến các thành phần trong Component và đến các Component khác.
 - State có thể được thay đổi bất cứ khi nào mong muốn
